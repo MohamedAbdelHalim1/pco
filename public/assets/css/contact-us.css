@@ -1,0 +1,739 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden !important;
+    font-family: "Barlow", sans-serif;
+}
+
+.pc {
+    display: block;
+}
+
+.mob {
+    display: none;
+}
+
+
+.sec-header {
+    background-color: #272e35;
+}
+
+.sec-logo {
+    background-color: #272e35;
+}
+
+.logo-header {
+    width: 190px;
+    height: 80px;
+}
+
+.big-nav .part-nav {
+    margin-top: 1.3rem;
+}
+
+.big-nav .end-nav {
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+
+.nav-item i {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.big-nav .nav-item {
+    margin-right: 10px;
+}
+
+.big-nav .nav-item .nav-link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.big-nav .nav-item .nav-link:hover {
+    color: #f38323;
+}
+
+.icon-nav {
+    border-radius: 50%;
+    border: 2px #fff solid;
+
+}
+
+.icon-nav:hover {
+    background-color: #f38323;
+    border: 2px #f38323 solid;
+}
+
+.nav-link img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -440px;
+    /* Initially hide sidebar off-screen */
+    width: 440px;
+    height: 100vh;
+    background-color: #fff;
+    color: #fff;
+    padding: 10px;
+    transition: right 0.3s;
+    /* Add transition effect */
+}
+
+.sidebar h4 {
+    font-weight: 500;
+    color: #140c04;
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.sidebar ul li {
+    color: #140c04;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 25px 0px;
+}
+
+.sidebar i {
+    color: #f38323;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.sidebar img {
+    width: 190px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sub-banner {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+header {
+    position: relative;
+}
+
+
+.header-content {
+    position: absolute;
+    top: 47%;
+    left: 10%;
+    z-index: 3;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    color: #140c04;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    margin-left: 10px;
+}
+
+.breadcrumb .breadcrumb-item,
+.breadcrumb .breadcrumb-item a {
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    text-transform: uppercase;
+    color: #140c04 !important;
+    font-size: 15px;
+}
+
+.breadcrumb .breadcrumb-item a:hover {
+    color: #f38323 !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #140c04;
+    font-weight: 400;
+}
+
+
+.fixed-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+    scroll-behavior: smooth;
+}
+
+.fixed-nav.sticky {
+    top: -100px;
+    width: 100%;
+}
+
+.fixed-nav.sticky2 {
+    top: 0;
+    width: 100%;
+}
+
+
+.fixed-nav.sticky2 .sec-header,
+.fixed-nav.sticky2 .sec-logo {
+    background-color: #140c04;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 999999;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, .8);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: none;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+#searchInputModal {
+    padding: 20px;
+    width: 250px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaa !important;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.end-nav i:hover {
+    color: #f38323;
+}
+
+
+
+/*===============*/
+
+.form {
+    background-color: #ebebeb;
+    padding: 7% 0% 4% 0%;
+}
+
+.form h5 {
+    color: #f38323;
+}
+
+.form h3 {
+    color: #140c04;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 45px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.form p {
+    color: #140c04;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+    width: 75%;
+}
+
+.form h4 {
+    color: #140c04;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.form a {
+    color: #140c04;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.form a:hover {
+    color: #f38323;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.form .horizontal-line {
+    width: 35px;
+    height: 2px;
+    margin-right: 6px;
+    margin-top: 13px;
+    background-color: #f38323;
+}
+
+
+.form .form-input {
+    width: 48%;
+}
+
+.form .form-control {
+    padding: 14px;
+    border-radius: 0;
+}
+
+.form .form-check label {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    color: #5b6471;
+}
+
+.form .form-check label a {
+    text-decoration: none;
+    color: #2b429b;
+    font-weight: bold;
+}
+
+.form .button {
+    background-color: #f38323;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 14px 50px;
+    font-style: normal;
+    margin-top: 30px;
+    font-family: "Manrope", sans-serif;
+}
+
+.form .button:hover {
+    background-color: #f38323;
+    color: #fff;
+}
+
+
+/*==========footer section=============*/
+
+footer {
+    background-color: #140c04;
+    padding: 50px 0px 0px 0px;
+}
+
+footer h6 {
+    font-weight: 600;
+    font-size: 23px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+footer .small-square {
+    width: 10px;
+    height: 10px;
+    border: 3px #fff solid;
+}
+
+footer .horizontal-line-bg {
+    width: 100px;
+    height: 3px;
+    background-color: #f38323;
+    margin-left: 9px;
+    margin-top: 4px;
+}
+
+footer .logo-footer {
+    width: 190px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+footer .small-des {
+    line-height: 20px;
+    color: #999f;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+footer .square {
+    width: 50px;
+    height: 60px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(22, 24, 55, .7);
+    padding-top: 5px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+footer p {
+    font-weight: 800;
+    font-size: 13px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: .3rem;
+}
+
+footer .info-posts span {
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+footer .links li {
+    color: #999;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 5px;
+    padding: 10px 0px;
+    border-bottom: rgba(153, 153, 153, .7) 1px dashed;
+    text-transform: capitalize;
+    width: 80%;
+}
+
+footer .links li a {
+    text-decoration: none;
+    color: #999;
+}
+
+footer .links li i {
+    margin-right: 4px;
+}
+
+footer .form-control {
+    font-size: .8rem;
+    background-color: rgba(22, 24, 55, .7);
+    border: rgb(75, 75, 77, .5) 1px solid;
+}
+
+footer .form-control::placeholder {
+    color: #fff;
+}
+
+footer .input-group-text {
+    background-color: #f38323;
+    border: #f38323;
+}
+
+
+footer .social-icon-footer ul {
+    list-style: none;
+    display: inline;
+
+}
+
+footer .social-icon-footer i {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+footer .social-icon-footer i:hover {
+    color: #f38323;
+}
+
+footer .social-icon-footer ul li {
+    display: inline-block;
+    border: 1px rgba(255, 255, 255, 0.50) solid;
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+
+
+footer .social-icon-footer ul li a {
+    color: rgba(255, 255, 255, 0.50);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    height: 25px;
+    width: 25px;
+    font-size: 12px;
+}
+
+footer .contact-info p {
+    font-weight: 500;
+    font-size: 13px;
+    color: #999;
+    text-transform: capitalize;
+    margin-bottom: .3rem;
+}
+
+footer .contact-info h6 {
+    font-size: 16px;
+}
+
+footer .contact-info i {
+    color: #f38323;
+    font-size: 45px;
+    margin-top: 9px;
+    margin-right: 14px;
+}
+
+.small-footer {
+    background-color: rgba(22, 24, 55, .5);
+    padding: 30px 0px;
+}
+
+.small-footer a {
+    color: rgba(204, 204, 204, .8);
+}
+
+.small-footer a:hover {
+    color: #f38323;
+}
+
+
+/**/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #272e35;
+}
+
+
+/*goo to toop*/
+
+
+/* Fixed Go to Top Button */
+.go-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 35px;
+    z-index: 99;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: #f38323;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    writing-mode: vertical-rl;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+
+/* Progress Line (left side of the page) */
+.progress-line {
+    position: fixed;
+    bottom: 110px;
+    right: 45px;
+    width: 3px;
+    background-color: #f1f1f1;
+    height: 60px;
+    /* The line takes the full height of the page */
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #f38323;
+    height: 0%;
+    /* Initial height of the progress bar is 0 */
+    transition: height 0.25s ease-out, background-color 0.25s ease-out;
+}
+
+
+@media screen and (max-width:1000px) {
+    * {
+        overflow-x: hidden !important;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    i,
+    img,
+    .carousel,
+    .span,
+    a,
+    .sec-review,
+    .review,
+    .blog,
+    .sec-date {
+        overflow-y: hidden !important;
+    }
+
+
+    .pc {
+        display: none;
+    }
+
+    .mob {
+        display: block;
+    }
+
+
+    .logo-header-mob {
+        width: 150px;
+        height: 60px;
+    }
+
+    .icon-nav-mob {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mob .nav-item a {
+        color: #fff;
+    }
+
+    .mob hr {
+        color: #fff;
+        margin: 0;
+    }
+
+    .mob .offcanvas-header .btn-close {
+        padding-right: 10px;
+        margin-bottom: 25px;
+        margin-right: 8px;
+    }
+
+    .header-content {
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        z-index: 3;
+    }
+
+    .breadcrumb {
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .form {
+        padding: 60px 20px 0px 20px;
+    }
+
+    .form h3 {
+        font-size: 33px;
+        line-height: 35px;
+        letter-spacing: 1px;
+        margin-top: 20px;
+    }
+
+    .form p {
+        color: #140c04;
+        font-size: 15px;
+        font-weight: 300;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .form h4 {
+        color: #140c04;
+        margin-top: 25px;
+        font-size: 25px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+
+    .form .button {
+        margin-bottom: 20px;
+    }
+
+
+
+
+    /*==========footer=============*/
+
+    footer {
+        padding: 60px 20px 0px 20px;
+    }
+
+    footer .links li {
+        width: 90%;
+    }
+
+    .address-icon i {
+        margin-right: 38px!important;
+    }
+
+
+    .small-footer small {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .small-footer .info-small-footer {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .small-footer a {
+        font-size: 14px;
+        margin: 0px 3px;
+    }
+
+}
